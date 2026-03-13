@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Practical Quiz 2 - Table Scene</title>
+    <script src="aframe(1).js"></script>
+  </head>
+  <body>
+    <a-scene background="color: #38D5BE">
+
+      <!-- ===== GROUND ===== -->
+      <a-plane
+        position="0 0 0"
+        rotation="-90 0 0"
+        width="30"
+        height="30"
+        color="#FE9A37">
+      </a-plane>
+
+     <!-- ===== WALLS (room) ===== -->
+      <!-- Back wall -->
+      <a-box position="0 2.5 -6" width="14" height="5" depth="0.2" color="#E8D5B7"></a-box>
+      <!-- Front wall -->
+      <a-box position="0 2.5 3" width="14" height="5" depth="0.2" color="#E8D5B7"></a-box>
+      <!-- Left wall -->
+      <a-box position="-7 2.5 0" width="0.2" height="5" depth="12" color="#D4C4A0"></a-box>
+      <!-- Right wall -->
+      <a-box position="7 2.5 0" width="0.2" height="5" depth="12" color="#D4C4A0"></a-box>
+
+      <!-- ===== TABLE ===== -->
+      <!-- Table Top -->
+      <a-box
+        id="table-top"
+        position="0 1.0 -3"
+        width="2.2"
+        height="0.1"
+        depth="1.2"
+        color="#973C08">
+      </a-box>
+
+      <!-- Table Legs (4 legs) -->
+      <!-- Front Left -->
+      <a-box position="-0.95 0.5 -2.45" width="0.1" height="1.0" depth="0.1" color="#973C08"></a-box>
+      <!-- Front Right -->
+      <a-box position="0.95 0.5 -2.45" width="0.1" height="1.0" depth="0.1" color="#973C08"></a-box>
+      <!-- Back Left -->
+      <a-box position="-0.95 0.5 -3.55" width="0.1" height="1.0" depth="0.1" color="#973C08"></a-box>
+      <!-- Back Right -->
+      <a-box position="0.95 0.5 -3.55" width="0.1" height="1.0" depth="0.1" color="#973C08"></a-box>
+
+      <!-- ===== MILO TIN (on table, left side) ===== -->
+      <!-- Body -->
+      <a-cylinder
+        position="-0.5 1.1 -3"
+        radius="0.19"
+        height="0.40"
+        color="#2E7D32">
+      </a-cylinder>
+      <!-- Lid -->
+      <a-cylinder
+        position="-0.5 1.3 -3"
+        radius="0.19"
+        height="0.03"
+        color="#1B5E20">
+      </a-cylinder>
+       <!-- Label band -->
+      <a-cylinder
+        position="-0.5 1.165 -3"
+        radius="0.19"
+        height="0.09"
+        color="#388E3C">
+      </a-cylinder>
+    
+
+      <!-- ===== MILK TIN (on table, right side) ===== -->
+      <!-- Body -->
+      <a-cylinder
+        position="0.6 1.17 -3"
+        radius="0.1"
+        height="0.15"
+        color="#ECEFF1">
+      </a-cylinder>
+      <!-- Lid -->
+      <a-cylinder
+        position="0.6 1.245 -3"
+        radius="0.1"
+        height="0.01"
+        color="#B0BEC5">
+      </a-cylinder>
+     
+      <!-- ===== CUP 1 (on table, front left) ===== -->
+      <!-- Cup body (tapered using scale) -->
+      <a-cylinder
+        position="-0.11 1.115 -2.65"
+        radius="0.07"
+        height="0.1"
+        color="#E53935"
+        scale="1 1 1">
+      </a-cylinder>
+      <!-- Cup rim -->
+      <a-cylinder
+        position="-0.11 1.16 -2.65"
+        radius="0.075"
+        height="0.015"
+        color="#C62828">
+      </a-cylinder>
+
+      <!-- ===== CUP 2 (on table, front right) ===== -->
+      <a-cylinder
+        position="0.11 1.115 -2.65"
+        radius="0.07"
+        height="0.1"
+        color="#1565C0">
+      </a-cylinder>
+      <!-- Cup rim -->
+      <a-cylinder
+        position="0.11 1.16 -2.65"
+        radius="0.075"
+        height="0.015"
+        color="#0D47A1">
+      </a-cylinder>
+
+      <!-- ===== CHAIR 1(back of table) ===== -->
+      <!-- Seat -->
+      <a-box position="0 0.55 -4.2" width="0.7" height="0.07" depth="0.7" color="#973C08"></a-box>
+      <!-- Back rest -->
+      <a-box position="0 0.95 -4.5" width="0.7" height="0.7" depth="0.06" color="#973C08"></a-box>
+      <!-- Front left leg -->
+      <a-box position="-0.3 0.25 -3.9" width="0.06" height="0.5" depth="0.06" color="#973C08"></a-box>
+      <!-- Front right leg -->
+      <a-box position="0.3 0.25 -3.9" width="0.06" height="0.5" depth="0.06" color="#973C08"></a-box>
+      <!-- Back left leg -->
+      <a-box position="-0.3 0.25 -4.5" width="0.06" height="0.5" depth="0.06" color="#973C08"></a-box>
+      <!-- Back right leg -->
+      <a-box position="0.3 0.25 -4.5" width="0.06" height="0.5" depth="0.06" color="#973C08"></a-box>
+
+      <!-- ===== CHAIR 2 (left of table) ===== -->
+      <!-- Seat -->
+      <a-box position="-1.8 0.55 -3" width="0.7" height="0.07" depth="0.7" color="#973C08"></a-box>
+      <!-- Back rest -->
+      <a-box position="-2.1 0.95 -3" width="0.06" height="0.7" depth="0.7" color="#973C08"></a-box>
+      <!-- Legs -->
+      <a-box position="-1.5 0.25 -2.7" width="0.06" height="0.5" depth="0.06" color="#973C08"></a-box>
+      <a-box position="-2.1 0.25 -2.7" width="0.06" height="0.5" depth="0.06" color="#973C08"></a-box>
+      <a-box position="-1.5 0.25 -3.3" width="0.06" height="0.5" depth="0.06" color="#973C08"></a-box>
+      <a-box position="-2.1 0.25 -3.3" width="0.06" height="0.5" depth="0.06" color="#973C08"></a-box>
+
+      <!-- ===== BEAUTIFICATION EXTRAS ===== -->
+     <!-- ===== CEILING ===== -->
+      <a-box position="0 5 -3" width="14" height="0.2" depth="18" color="#FEF9C2"></a-box>
+
+      <!-- Window on back wall -->
+      <a-box position="2.5 2.8 -5.9" width="1.2" height="1.2" depth="0.05" color="#AED6F1" opacity="0.7"></a-box>
+      <a-box position="2.5 2.8 -5.88" width="1.25" height="0.06" depth="0.06" color="#5D4037"></a-box>
+      <a-box position="2.5 2.8 -5.88" width="0.06" height="1.25" depth="0.06" color="#5D4037"></a-box>
+
+      <!-- Picture frame on wall -->
+      <a-box position="-2.5 3 -5.9" width="1.0" height="0.8" depth="0.05" color="#F5CBA7"></a-box>
+      <a-box position="-2.5 3 -5.85" width="0.9" height="0.7" depth="0.05" color="#1A5276"></a-box>
+
+      <!-- ===== WINDOW - LEFT WALL ===== -->
+      <!-- Window frame -->
+      <a-box position="-6.9 2.8 -2" width="0.15" height="1.6" depth="2.0" color="#5D4037"></a-box>
+      <!-- Window glass -->
+      <a-box position="-6.85 2.8 -2" width="0.08" height="1.4" depth="1.8" color="#AED6F1" opacity="0.6"></a-box>
+      <!-- Horizontal bar -->
+      <a-box position="-6.83 2.8 -2" width="0.06" height="0.06" depth="1.85" color="#5D4037"></a-box>
+      <!-- Vertical bar -->
+      <a-box position="-6.83 2.8 -2" width="0.06" height="1.45" depth="0.06" color="#5D4037"></a-box>
+      <!-- Sunlight glow -->
+      <a-box position="-6.5 2.8 -2" width="0.5" height="1.3" depth="1.7" color="#FFFDE7" opacity="0.07"></a-box>
+
+      <!-- ===== WINDOW - RIGHT WALL ===== -->
+      <!-- Window frame -->
+      <a-box position="6.9 2.8 -2" width="0.15" height="1.6" depth="2.0" color="#5D4037"></a-box>
+      <!-- Window glass -->
+      <a-box position="6.85 2.8 -2" width="0.08" height="1.4" depth="1.8" color="#AED6F1" opacity="0.6"></a-box>
+      <!-- Horizontal bar -->
+      <a-box position="6.83 2.8 -2" width="0.06" height="0.06" depth="1.85" color="#5D4037"></a-box>
+      <!-- Vertical bar -->
+      <a-box position="6.83 2.8 -2" width="0.06" height="1.45" depth="0.06" color="#5D4037"></a-box>
+      <!-- Sunlight glow -->
+      <a-box position="6.5 2.8 -2" width="0.5" height="1.3" depth="1.7" color="#FFFDE7" opacity="0.07"></a-box>
+     
+      <!-- ===== TV ON FRONT WALL (facing into room) ===== -->
+      <!-- TV mount bracket -->
+      <a-box position="0 2.2 2.88" width="0.1" height="0.6" depth="0.1" color="#222222"></a-box>
+      <!-- TV body -->
+      <a-box position="0 2.8 2.85" width="2.8" height="1.6" depth="0.1" color="#111111"></a-box>
+      <!-- TV bezel -->
+      <a-box position="0 2.8 2.8" width="2.6" height="1.4" depth="0.05" color="#1a1a1a"></a-box>
+      <!-- TV screen (facing INTO the room = negative Z face) -->
+      <a-box position="0 2.8 2.75" width="2.5" height="1.3" depth="0.04" color="#1565C0" opacity="0.9"></a-box>
+      <!-- Screen shine -->
+      <a-box position="-0.5 3.1 2.74" width="0.8" height="0.3" depth="0.02" color="#FFFFFF" opacity="0.08"></a-box>
+      <!-- TV logo bar -->
+      <a-box position="0 2.08 2.82" width="0.4" height="0.06" depth="0.08" color="#333333"></a-box>
+
+      
+      <!-- Potted plant (left corner) -->
+      <!-- Pot -->
+      <a-cylinder position="-5.5 0.25 -5" radius="0.30" height="0.4" color="#E67E22"></a-cylinder>
+      <!-- Soil -->
+      <a-cylinder position="-5.5 0.46 -5" radius="0.24" height="0.05" color="#441306"></a-cylinder>
+      <!-- Plant stem -->
+      <a-cylinder position="-5.5 0.85 -5" radius="0.04" height="0.8" color="#27AE60"></a-cylinder>
+      <!-- Leaves (sphere) -->
+      <a-sphere position="-5.5 1.3 -5" radius="0.40" color="#2ECC71"></a-sphere>
+     
+       <!-- ===== FAN 1 (above table, centre) ===== -->
+      <!-- Drop rod -->
+      <a-cylinder position="0 4.8 -3" radius="0.04" height="0.4" color="#555555"></a-cylinder>
+      <!-- Motor hub -->
+      <a-cylinder position="0 4.55 -3" radius="0.12" height="0.15" color="#444444"></a-cylinder>
+      <!-- Blades (spinning) -->
+      <a-entity position="0 4.55 -3" animation="property: rotation; to: 0 360 0; loop: true; dur: 1500; easing: linear">
+        <a-box position="0.55 0 0" width="0.9" height="0.04" depth="0.22" color="#8B4513" rotation="0 0 5"></a-box>
+        <a-box position="-0.55 0 0" width="0.9" height="0.04" depth="0.22" color="#8B4513" rotation="0 0 -5"></a-box>
+        <a-box position="0 0 0.55" width="0.22" height="0.04" depth="0.9" color="#8B4513" rotation="5 0 0"></a-box>
+        <a-box position="0 0 -0.55" width="0.22" height="0.04" depth="0.9" color="#8B4513" rotation="-5 0 0"></a-box>
+      </a-entity>
+      <!-- Light bulb hanging from fan 1 -->
+      <a-cylinder position="0 4.35 -3" radius="0.05" height="0.1" color="#888888"></a-cylinder>
+      <a-sphere position="0 4.22 -3" radius="0.1" color="#FFFDE7" opacity="0.95"></a-sphere>
+      <a-sphere position="0 4.22 -3" radius="0.18" color="#FFF9C4" opacity="0.3"></a-sphere>
+
+      <!-- Small rug under table -->
+      <a-box position="0 0.01 -3" width="3" height="0.02" depth="2.5" color="#C0392B" opacity="0.8"></a-box>
+      <!-- Rug border -->
+      <a-box position="0 0.02 -3" width="2.8" height="0.02" depth="2.3" color="#E8D5B7" opacity="0.4"></a-box>
+
+      <!-- ===== CAMERA ===== -->
+      <a-entity
+        position="0 1.6 2"
+        camera
+        look-controls
+        wasd-controls>
+      </a-entity>
+
+    </a-scene>
+  </body>
+</html>
